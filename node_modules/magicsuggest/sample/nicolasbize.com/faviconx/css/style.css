@@ -1,0 +1,143 @@
+
+#forkme_banner {
+  display: block;
+  position: absolute;
+  top:0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  background: url('../images/blacktocat.png') #868686 no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+a.notice{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  z-index: 10;
+  padding: 0 5px;
+  color: #666;
+  font-weight: 400;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #EEE;
+  font-size: 14px;
+}
+body{
+  background: #444;
+}
+
+hr{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+}
+
+body,
+button,
+input,
+select,
+h1, h2, h3,
+textarea {
+  color: #444444;
+  font-family: Merriweather, Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 29.7px;
+}
+
+.main{
+  padding-top: 40px;
+}
+
+h1{
+  font-size: 30px;
+}
+
+h2{
+  font-size: 24px
+}
+
+h3{
+  font-size: 18px
+}
+
+.col{
+  width: 450px;
+  float: left;
+}
+.run{
+  width: 75px;
+  float: left;
+  background-color: #B00E0E;
+  color: #EEE;
+  text-align: center;
+  border-radius: 2px;
+  margin-left: 5px;
+  height: 30px;
+  cursor: pointer;
+}
+.step-title{
+  font-size: 24px;
+}
+.inline-code{
+  color: #777;
+  font-family: monospace;
+}
+.section{
+  margin-top: 40px;
+  clear: both;
+  overflow: hidden;
+}
+code{
+  color: #B00E0E;
+}
+.content{
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+  background-color: #FFF;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header{
+  background: url(../images/logo.png) no-repeat;
+  height: 150px;
+  width: 480px;
+  padding-left: 500px;
+  font-size: 20px;
+  border-bottom: 5px solid #CCC;
+}
+.header .subheader{
+  position: relative;
+  top: 110px;
+  font-size: 24px;
+}
+.doc .prop{
+  clear: both;
+  overflow: hidden;
+  padding-left: 20px;
+}
+.doc .prop .property{
+  float: left;
+  color: #B00E0E;
+  width: 200px;
+}
+.doc .prop .value{
+  float: left;
+}
+.warning{
+  color: #B02E2E;
+  font-size: 16px;
+  font-weight: bold;
+}
