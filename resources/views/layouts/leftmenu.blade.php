@@ -27,7 +27,12 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
-                
+                <li class="nav-item">
+                    <a href="/profile" class="nav-link {{ (request()->segment(1) == 'profile') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>Profile</p>
+                    </a>
+                </li>
                 <br>
                 <a href="{{ route('logout') }}"
                      onclick="event.preventDefault();

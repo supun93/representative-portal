@@ -6,9 +6,9 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   @if($pageTitle ?? ''!="")
-  <title>KIU Student Portal | {{ $pageTitle ?? '' ?? '' }}</title>
+  <title>KIU Representative Portal | {{ $pageTitle ?? '' ?? '' }}</title>
 @else
-  <title>KIU Student Portal | Dashboard</title>
+  <title>KIU Representative Portal | Dashboard</title>
 @endif
   <!-- Font Awesome Icons -->
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">

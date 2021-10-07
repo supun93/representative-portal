@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Courses;
 use App\LogActivity;
+use App\MarketingCustomizeFormTypes;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -49,5 +51,11 @@ class FetchController extends Controller
 
         echo json_encode($response);
         exit;
+    }
+
+    public function profile (){
+        $user = Auth::user();
+        $course = Courses::all();
+        return view('profile', Compact('user', 'course'));
     }
 }

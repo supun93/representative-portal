@@ -1,5 +1,5 @@
 <?php 
-$pageTitle = "Activity Log";
+$pageTitle = "Dashboard";
 ?>
 @extends('layouts.master')
 @section('content')
