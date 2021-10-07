@@ -20,10 +20,10 @@ class LastStudentsActivity
     public function handle($request, Closure $next)
     {
         if (Auth::check()) {
-            $log_user = Auth::user()->student_id;
-            $student = LogActivity::where('student','=',$log_user)->orderBy('id', 'desc')->first();
-            $student->updated_at = Carbon::now();
-            $student->save();
+            $log_user = Auth::user()->marketing_representative_id; 
+            $add = LogActivity::where('representative_id','=',$log_user)->orderBy('id', 'desc')->first();
+            $add->updated_at = Carbon::now();
+            $add->save();
         }
         return $next($request);
     }

@@ -48,8 +48,8 @@ class LoginController extends Controller
         ]);
 
         if (Auth::guard('web')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
-            $student_id = \App\Students::where('email1','=',$request->email)->latest()->first();
-            LogActivity::addToLog($student_id->range_id);
+            $userId = \App\MarketingRepresentative::where('email','=',$request->email)->latest()->first(); //dd($userId);
+            LogActivity::addToLog($userId->marketing_representative_id);
             return redirect()->intended('/');
         }
         
